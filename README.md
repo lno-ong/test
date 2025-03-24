@@ -19,5 +19,14 @@ git add .
 # 提交更改
 git commit -m "commit describe"
 
-# 推送到远程仓库 ，后续git会记住当前分支，直接使用git push即可
+# 推送到远程仓库 
 git push origin main
+
+# 后续更新
+git add <filename> 或 .
+#
+git commit -m "commit describe"
+#
+git push
+
+
