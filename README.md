@@ -30,3 +30,19 @@ git commit -m "commit describe"
 git push
 
 
+# 添加两个远程仓库
+git remote add origin https://github.com/lno-ong/test.git
+git remote add backup https://sourceforge.net/p/yourproject/code.git
+
+# 推送到两个远程仓库
+git push origin main
+git push backup main
+
+# 或者，使用单个命令推送到多个远程仓库
+# 编辑 .git/config 文件，添加以下配置：
+# [remote "all"]
+#     url = https://github.com/lno-ong/test.git
+#     url = https://sourceforge.net/p/yourproject/code.git
+
+# 然后使用以下命令
+git push all main
